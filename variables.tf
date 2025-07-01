@@ -1,7 +1,7 @@
 variable "resource_group_name" {
   description = "리소스 그룹의 이름"
   type        = string
-  default     = "rg-apim-aoai-prod-001"
+  default     = "rg-apim-aoai-demo-202507"
 }
 
 variable "location" {
@@ -13,7 +13,7 @@ variable "location" {
 variable "apim_name" {
   description = "API Management 인스턴스의 이름"
   type        = string
-  default     = "tdg-apim-zb-prod-202506"
+  default     = "apim-api-demo-tf-202507"
 }
 
 variable "apim_publisher_name" {
@@ -47,19 +47,19 @@ variable "openai_services" {
   }))
   default = {
     "aoai_eastus" = {
-      name            = "tdg-aoai-zb-koreacental-202506"
+      name            = "tdg-aoai-zb-eastus-202507"
       location        = "East US"
       sku_name        = "S0"
       model_name      = "gpt-4o"
-      model_version   = "2024-08-06"
+      model_version   = "2024-11-20"
       deployment_name = "gpt-4o"
     },
     "aoai_westus" = {
-      name            = "tdg-aoai-zb-japaneast-202506"
+      name            = "tdg-aoai-zb-westus-202507"
       location        = "West US"
       sku_name        = "S0"
       model_name      = "gpt-4o"
-      model_version   = "2024-08-06"
+      model_version   = "2024-11-20"
       deployment_name = "gpt-4o"
     }
   }
