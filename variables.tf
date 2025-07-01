@@ -13,7 +13,7 @@ variable "location" {
 variable "apim_name" {
   description = "API Management 인스턴스의 이름"
   type        = string
-  default     = "apim-zb-prod-202506"
+  default     = "tdg-apim-zb-prod-202506"
 }
 
 variable "apim_publisher_name" {
@@ -47,7 +47,7 @@ variable "openai_services" {
   }))
   default = {
     "aoai_eastus" = {
-      name            = "aoai-zb-koreacental-202506"
+      name            = "tdg-aoai-zb-koreacental-202506"
       location        = "East US"
       sku_name        = "S0"
       model_name      = "gpt-4o"
@@ -55,7 +55,7 @@ variable "openai_services" {
       deployment_name = "gpt-4o"
     },
     "aoai_westus" = {
-      name            = "aoai-zb-japaneast-202506"
+      name            = "tdg-aoai-zb-japaneast-202506"
       location        = "West US"
       sku_name        = "S0"
       model_name      = "gpt-4o"

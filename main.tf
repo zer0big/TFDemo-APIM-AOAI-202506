@@ -37,6 +37,10 @@ resource "azurerm_cognitive_account" "aoai" {
   resource_group_name = azurerm_resource_group.rg.name
   kind                = "OpenAI"
   sku_name            = each.value.sku_name
+
+  custom_subdomain_name = each.value.name
+  public_network_access_enabled = true
+
 }
 
 # 2개의 gpt-4o 모델 배포 (for_each 사용)
